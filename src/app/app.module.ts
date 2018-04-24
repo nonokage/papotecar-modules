@@ -9,6 +9,7 @@ import { ConnectComponent } from './connect/connect.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchTravelComponent } from './search-travel/search-travel.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // creation des routes / url
 const appRoutes: Routes = [
@@ -32,6 +33,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     )],

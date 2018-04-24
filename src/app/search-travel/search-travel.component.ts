@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-search-travel',
@@ -11,5 +12,9 @@ export class SearchTravelComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+}
 
 }
