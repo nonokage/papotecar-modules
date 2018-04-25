@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SearchTravelComponent } from './search-travel/search-travel.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 // creation des routes / url
 const appRoutes: Routes = [
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     ConnectComponent,
     FooterComponent,
     SearchTravelComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,
