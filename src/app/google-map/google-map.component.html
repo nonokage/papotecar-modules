@@ -1,1 +1,15 @@
-<div #gmap style=”width:100%;height:400px”></div>
+<div #gmap style="width:100%;height:400px"></div>
+
+<div class="row btn-google">
+    <div class="col">
+        <button (click)="setMapType('terrain')" class="btn btn-primary outline">
+            Terrain
+        </button>
+        <button (click)="setMapType('satellite')" class="btn btn-danger outline">
+            Satellite
+        </button>
+        <button (click)="setMapType('roadmap')" class="btn btn-warning outline">
+            Road Map
+        </button>
+    </div>
+</div>
